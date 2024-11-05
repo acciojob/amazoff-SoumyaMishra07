@@ -11,6 +11,7 @@ public class OrderService {
 
     OrderRepository orderRepository=new OrderRepository();
 
+
     public void addOrder(Order order){
         orderRepository.addOrder(order);
     }
@@ -18,6 +19,7 @@ public class OrderService {
     public void addPartner(String partnerId){
         orderRepository.addPartner(partnerId);
     }
+
 
     public void addOrderPartnerPair(String orderId, String partnerId){
         orderRepository.addOrderPartnerPair(orderId, partnerId);
@@ -88,6 +90,7 @@ public class OrderService {
         String time = HH + ":" + MM;
         return time;
     }
+
 
     public void deletePartnerById(String partnerId){
 
